@@ -1,4 +1,9 @@
 import render from './lib/render';
 import LogForm from './pages/LogForm';
+import LogFormApp from './lib/LogFormApp';
 
-render(LogForm, document.getElementById('root'));
+if (location.hash === '#visitantes') {
+  render(LogForm, document.getElementById('root'));
+}
+
+LogFormApp();

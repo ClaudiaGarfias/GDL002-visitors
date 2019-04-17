@@ -1,4 +1,9 @@
 .log-form {
     display: flex;
 	flex-direction: column;
+	margin: 2% 30%;
+	text-align: center;
+}
+.log-form label {
+	text-align: left;
 }

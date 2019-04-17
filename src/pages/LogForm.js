@@ -2,18 +2,19 @@ import createElement from '../lib/createElement';
 import Button from '../components/Button';
 import input from '../components/input';
 import label from '../components/label';
-// import '../styles/index.css'
+import h1 from '../components/h1';
 
 export default () => createElement('form', {
   className: 'log-form',
-  children: [label({ text: 'Nombre Completo' }),
-    input({ placeholder: 'Nombre Completo' }),
+  children: [h1({ text: `Bienvenido por favor llena el registro:` }),
+    label({ text: `Nombre Completo` }),
+    input({ className: 'full-name-input', placeholder: 'nombre y apellidos' }),
     label({ text: 'Email' }),
-    input({ placeholder: 'Email' }),
+    input({ placeholder: 'email' }),
     label({ text: 'Empresa' }),
-    input({ placeholder: 'Empresa' }),
+    input({ placeholder: 'empresa u organización' }),
     label({ text: 'Anfitrión' }),
-    input({ placeholder: 'Anfitrión' }),
+    input({ placeholder: 'anfitrión' }),
     label({ text: 'Tomar Fotografía' }),
     Button({ className: 'photo-btn', text: 'Tomar Foto' }),
     Button({ className: 'register-btn', text: 'Registrarse' })],
